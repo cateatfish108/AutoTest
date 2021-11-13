@@ -1,0 +1,200 @@
+{
+    "case1": {
+        "case_id": "case1",
+		"case_note":"买入委托-限价单-购买力不足"
+        "url": "http://10.0.28.219:9001/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FLD_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 400,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": -32060050    
+			}	
+		}
+    },
+	"case3": {
+        "case_id": "case3",
+		"case_note":"买入委托-市价单-购买力不足"
+        "url": "http://10.0.28.219:9001/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FLD_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 400,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": -32060050    
+			}	
+		}
+    }，
+	"case5": {
+        "case_id": "case5",
+		"case_note":"买入委托-止损价-购买力不足"
+        "url": "http://10.0.28.219:9001/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FLD_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 400,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": -32060050    
+			}	
+		}
+    },
+	"case7": {
+        "case_id": "case7",
+		"case_note":"买入委托-止损限价单-购买力不足"
+        "url": "http://10.0.28.219:9001/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FLD_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 400,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": -32060050    
+			}	
+		},
+    },
+	"case1": {
+        "case_id": "case1",
+		"case_note":"卖出委托-限价单-购买力不足"
+        "url": "http://10.0.28.219:9001/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FLD_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 400,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": -32060050    
+			}	
+		}
+    },
+	"case3": {
+        "case_id": "case3",
+		"case_note":"卖出委托-市价单-购买力不足"
+        "url": "http://10.0.28.219:9001/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FLD_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 400,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": -32060050    
+			}	
+		}
+    }，
+	"case5": {
+        "case_id": "case5",
+		"case_note":"卖出委托-止损价-购买力不足"
+        "url": "http://10.0.28.219:9001/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FLD_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 400,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": -32060050    
+			}	
+		}
+    },
+	"case7": {
+        "case_id": "case7",
+		"case_note":"卖出委托-止损限价单-购买力不足"
+        "url": "http://10.0.28.219:9001/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FLD_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 400,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": -32060050    
+			}	
+		},
+    }
+}

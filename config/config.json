@@ -1,0 +1,5 @@
+{
+  "test_system":"OMS",
+  "report_path":"../report/",
+  "log_path":"../log/"
+}

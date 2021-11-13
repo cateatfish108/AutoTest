@@ -1,0 +1,221 @@
+{
+    "case1": {
+        "case_id": "case1",
+        "url": "http://172.19.80.213:9001/",
+        "method": "GET",
+        "data": {
+            "FID_ZQDM": "F",
+            "FID_SBWTH": "100135",
+            "FID_LY": 1,
+            "Funcid": 620021,
+            "FID_ZJZH": "5LC05004",
+            "FID_JYMM": 123456,
+            "FID_KHH": "5LC05004"
+        },
+        "header": "",
+        "rely_data": {
+            "data$FID_SBWTH": "send_order.json%case1%response%OMS%ROWS%$0%FID_SBWTH"
+        },
+        "check_response_item": "",
+        "check_item": {
+            "quickbroker.entrust": {
+                "report_result": {
+                    "actual_value": 1,
+                    "expect_value": 2
+                },
+                "offset_flag": {
+                    "actual_value": 1,
+                    "expect_value": 1
+                },
+                "entrust_type": {
+                    "actual_value": 1001,
+                    "expect_value": 1001
+                },
+                "stock_type": {
+                    "actual_value": "S0",
+                    "expect_value": "C1"
+                },
+                "stock_code": {
+                    "actual_value": "F",
+                    "expect_value": "BABA"
+                },
+                "order_type": {
+                    "actual_value": 0,
+                    "expect_value": 0
+                },
+                "business_balance": {
+                    "actual_value": "0.000",
+                    "expect_value": 0
+                },
+                "clear_balance": {
+                    "actual_value": "0.000",
+                    "expect_value": 0
+                },
+                "frozen_balance": {
+                    "actual_value": "144.750",
+                    "expect_value": 907.5
+                },
+                "business_part_commision": {
+                    "actual_value": "0.000",
+                    "expect_value": 0
+                },
+                "cancel_amount": {
+                    "actual_value": 0,
+                    "expect_value": 0
+                },
+                "order_source": {
+                    "actual_value": "1",
+                    "expect_value": 1
+                },
+                "business_amount": {
+                    "actual_value": 0,
+                    "expect_value": 0
+                },
+                "business_price": {
+                    "actual_value": "0.0000",
+                    "expect_value": 0
+                },
+                "cancel_flag": {
+                    "actual_value": "W",
+                    "expect_value": "O"
+                }
+            },
+            "quickbroker.fundfrozendtl": {
+                "frozen_type": {
+                    "actual_value": 1,
+                    "expect_value": 1
+                },
+                "occur_balance": {
+                    "actual_value": "144.750",
+                    "expect_value": 907.5
+                }
+            },
+            "quickbroker.business": {
+                "clear_balance": {
+                    "actual_value": "",
+                    "expect_value": ""
+                },
+                "business_balance": {
+                    "actual_value": "",
+                    "expect_value": ""
+                },
+                "commission": {
+                    "actual_value": "",
+                    "expect_value": ""
+                },
+                "entrust_type": {
+                    "actual_value": "",
+                    "expect_value": ""
+                },
+                "business_amount": {
+                    "actual_value": "",
+                    "expect_value": ""
+                },
+                "stock_code": {
+                    "actual_value": "",
+                    "expect_value": ""
+                },
+                "stock_type": {
+                    "actual_value": "",
+                    "expect_value": ""
+                },
+                "business_price": {
+                    "actual_value": "",
+                    "expect_value": ""
+                }
+            },
+            "quickbroker.fundaccount": {
+                "buytocover_freeze_funds": {
+                    "actual_value": "0.000",
+                    "expect_value": 0
+                },
+                "sellshort_freeze_funds": {
+                    "actual_value": "0.000",
+                    "expect_value": 0
+                },
+                "sellshort_funds": {
+                    "actual_value": "0.000",
+                    "expect_value": 0
+                },
+                "sell_yesterday_release_funds": {
+                    "actual_value": "0.000",
+                    "expect_value": 0
+                },
+                "buytocover_yesterday_funds": {
+                    "actual_value": "0.000",
+                    "expect_value": 0
+                },
+                "buytocover_today_funds": {
+                    "actual_value": "0.000",
+                    "expect_value": 0
+                },
+                "buy_up_funds": {
+                    "actual_value": "0.000",
+                    "expect_value": 0
+                },
+                "sell_today_release_funds": {
+                    "actual_value": "0.000",
+                    "expect_value": 0
+                }
+            },
+            "quickbroker.stkfrozendtl": {
+                "frozen_type": {
+                    "actual_value": "",
+                    "expect_value": ""
+                },
+                "occur_amount": {
+                    "actual_value": "",
+                    "expect_value": ""
+                }
+            }
+        },
+        "response": {
+            "MIDOFFICE": null,
+            "OMS": {
+                "FID_FULL_ERROR_INFO": "",
+                "ROWS": [
+                    {
+                        "FID_WTLB": "1001",
+                        "FID_WTSL": "20",
+                        "FID_BZ": "USD",
+                        "FID_SBWTH": "100135",
+                        "FID_WTJG": "0.0000000000",
+                        "FID_WTJD": "\u4e0a\u5348\u8fde\u7eed\u7ade\u4ef7",
+                        "FID_ZJZH": "5LC05004",
+                        "FID_JYS": "NY",
+                        "FID_ZQDM": "F",
+                        "FID_ZQLB": "S0",
+                        "FID_WTRQ": "20210514",
+                        "FID_DDLX": "0",
+                        "FID_WTPCH": "0",
+                        "FID_ZQMC": "Ford Motor",
+                        "FID_WTSJ": "111406768",
+                        "FID_CXWTH": "0",
+                        "FID_KHH": "5LC05004"
+                    }
+                ],
+                "FID_CODE": "0",
+                "FID_MESSAGE": "Cancel Successful",
+                "FUNCID": "620021"
+            }
+        },
+        "db_key": {
+            "quickbroker.entrust": {
+                "entrust_no": "@RESPONSE.OMS.ROWS.$0.FID_SBWTH"
+            },
+            "quickbroker.business": {
+                "entrust_no": "@RESPONSE.OMS.ROWS.$0.FID_SBWTH"
+            },
+            "quickbroker.fundaccount": {
+                "fund_account": "@FIELD.5LC05004"
+            },
+            "quickbroker.stkfrozendtl": {
+                "serial_no": "@SQL.SELECT STKFROZ_SERIAL_NO FROM QUICKBROKER.ENTRUST WHERE ENTRUST_NO=$$@RESPONSE.OMS.ROWS.$0.FID_SBWTH"
+            },
+            "quickbroker.fundfrozendtl": {
+                "serial_no": "@SQL.SELECT FUNDFROZ_SERIAL_NO FROM QUICKBROKER.ENTRUST WHERE ENTRUST_NO=$$@RESPONSE.OMS.ROWS.$0.FID_SBWTH"
+            }
+        },
+        "check_result": 0
+    }
+}

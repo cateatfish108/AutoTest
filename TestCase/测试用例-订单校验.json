@@ -1,0 +1,4215 @@
+{
+    "case1": {
+        "case_id": "1",
+		"case_note":"买入委托-限价单-测试输入的资金账号不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05001",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE": 
+			{
+				"expect_value": "-42060214" 
+			}	
+		}
+    },
+	"case2": {
+        "case_id": "2",
+		"case_note":"卖出委托-限价单-测试输入的资金账号不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05001",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060214"  
+			}	
+		}
+    },
+	"case3": {
+        "case_id": "3",
+		"case_note":"买入委托-市价单-测试输入的资金账号不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+			"FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05001",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060214"  
+			}	
+		}
+    },
+	"case4": {
+        "case_id": "4",
+		"case_note":"卖出委托-市价单-测试输入的资金账号不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05001",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060214"  
+			}	
+		}
+    },
+	"case5": {
+        "case_id": "5",
+		"case_note":"买入委托-止损单-测试输入的资金账号不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05001",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060214"  
+			}	
+		}
+    },
+	"case6": {
+        "case_id": "6",
+		"case_note":"卖出委托-止损单-测试输入的资金账号不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05001",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060214"  
+			}	
+		}
+    },
+	"case7": {
+        "case_id": "7",
+		"case_note":"买入委托-止损限价单-测试输入的资金账号不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05001",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060214"  
+			}	
+		}
+    },
+	"case8": {
+        "case_id": "8",
+		"case_note":"卖出委托-止损限价单-测试输入的资金账号不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05001",
+            "FID_ZQDM": "BABA",
+            "FID_WTJG": 120,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060214"  
+			}	
+		}
+    },
+	"case9": {
+        "case_id": "9",
+		"case_note":"买入委托-限价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case10": {
+        "case_id": "10",
+		"case_note":"卖出委托-限价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case11": {
+        "case_id": "11",
+		"case_note":"买入委托-市价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case12": {
+        "case_id": "12",
+		"case_note":"卖出委托-市价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case13": {
+        "case_id": "13",
+		"case_note":"买入委托-止损单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case14": {
+        "case_id": "14",
+		"case_note":"卖出委托-止损单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case15": {
+        "case_id": "15",
+		"case_note":"买入委托-止损限价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case16": {
+        "case_id": "16",
+		"case_note":"卖出委托-止损限价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTJG": 120,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case17": {
+        "case_id": "17",
+		"case_note":"买入委托-限价单-测试输入的客户附加信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05003",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060248" 
+			}	
+		}
+    },
+	"case18": {
+        "case_id": "18",
+		"case_note":"卖出委托-限价单-测试输入的客户附加信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05003",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060248" 
+			}	
+		}
+    },
+	"case19": {
+        "case_id": "19",
+		"case_note":"买入委托-市价单-测试输入的客户附加信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05003",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060248" 
+			}	
+		}
+    },
+	"case20": {
+        "case_id": "20",
+		"case_note":"卖出委托-市价单-测试输入的客户附加信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05003",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060248" 
+			}	
+		}
+    },
+	"case21": {
+        "case_id": "21",
+		"case_note":"买入委托-止损单-测试输入的客户附加信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05003",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060248" 
+			}	
+		}
+    },
+	"case22": {
+        "case_id": "22",
+		"case_note":"卖出委托-止损单-测试输入的客户附加信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05003",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060248" 
+			}	
+		}
+    },
+	"case23": {
+        "case_id": "23",
+		"case_note":"买入委托-止损限价单-测试输入的客户附加信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05003",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060248" 
+			}	
+		}
+    },
+	"case24": {
+        "case_id": "24",
+		"case_note":"卖出委托-止损限价单-测试输入的客户附加信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05003",
+            "FID_ZQDM": "BABA",
+            "FID_WTJG": 120,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060248" 
+			}	
+		}
+    },
+	"case25": {
+        "case_id": "25",
+		"case_note":"买入委托-限价单-测试证券代码不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060216" 
+			}	
+		}
+    },
+	"case26": {
+        "case_id": "26",
+		"case_note":"卖出委托-限价单-测试证券代码不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060216" 
+			}	
+		}
+    },
+	"case27": {
+        "case_id": "27",
+		"case_note":"买入委托-市价单-测试证券代码不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060216" 
+			}	
+		}
+    },
+	"case28": {
+        "case_id": "28",
+		"case_note":"卖出委托-市价单-测试证券代码不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060216" 
+			}	
+		}
+    },
+	"case29": {
+        "case_id": "29",
+		"case_note":"买入委托-止损单-测试证券代码不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060216" 
+			}	
+		}
+    },
+	"case30": {
+        "case_id": "30",
+		"case_note":"卖出委托-止损单-测试证券代码不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060216" 
+			}	
+		}
+    },
+	"case31": {
+        "case_id": "31",
+		"case_note":"买入委托-止损限价单-测试证券代码不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060216" 
+			}	
+		}
+    },
+	"case32": {
+        "case_id": "32",
+		"case_note":"卖出委托-止损限价单-测试证券代码不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST",
+            "FID_WTJG": 120,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060216" 
+			}	
+		}
+    },
+    "case33": {
+        "case_id": "33",
+		"case_note":"买入委托-限价单-测试证券类别不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST2",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060217" 
+			}	
+		}
+    },
+	"case34": {
+        "case_id": "34",
+		"case_note":"卖出委托-限价单-测试证券类别不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST2",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060217" 
+			}	
+		}
+    },
+	"case35": {
+        "case_id": "35",
+		"case_note":"买入委托-市价单-测试证券类别不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST2",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060217" 
+			}	
+		}
+    },
+	"case36": {
+        "case_id": "36",
+		"case_note":"卖出委托-市价单-测试证券类别不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST2",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060217" 
+			}	
+		}
+    },
+	"case37": {
+        "case_id": "37",
+		"case_note":"买入委托-止损单-测试证券类别不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST2",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060217" 
+			}	
+		}
+    },
+	"case38": {
+        "case_id": "38",
+		"case_note":"卖出委托-止损单-测试证券类别不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST2",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060217" 
+			}	
+		}
+    },
+	"case39": {
+        "case_id": "39",
+		"case_note":"买入委托-止损限价单-测试证券类别不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST2",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060217" 
+			}	
+		}
+    },
+	"case40": {
+        "case_id": "40",
+		"case_note":"卖出委托-止损限价单-测试证券代码不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST2",
+            "FID_WTJG": 120,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060217" 
+			}	
+		}
+    },
+	"case49": {
+        "case_id": "49",
+		"case_note":"买入委托-限价单-测试证券交易属性不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST1",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060219"    
+			}	
+		}
+    },
+	"case50": {
+        "case_id": "50",
+		"case_note":"卖出委托-限价单-测试证券交易属性不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST1",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060219"    
+			}	
+		}
+    },
+	"case51": {
+        "case_id": "51",
+		"case_note":"买入委托-市价单-测试证券交易属性不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST1",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060219"    
+			}	
+		}
+    },
+	"case52": {
+        "case_id": "52",
+		"case_note":"卖出委托-市价单-测试证券交易属性不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST1",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060219"    
+			}	
+		}
+    },
+	"case53": {
+        "case_id": "53",
+		"case_note":"买入委托-止损单-测试证券交易属性不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST1",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060219"    
+			}	
+		}
+    },
+	"case54": {
+        "case_id": "54",
+		"case_note":"卖出委托-止损单-测试证券交易属性不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST1",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060219"    
+			}	
+		}
+    },
+	"case55": {
+        "case_id": "55",
+		"case_note":"买入委托-止损限价单-测试证券交易属性不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST1",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060219"    
+			}	
+		}
+    },
+	"case56": {
+        "case_id": "56",
+		"case_note":"卖出委托-止损限价单-测试证券交易属性不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TEST1",
+            "FID_WTJG": 120,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060219"    
+			}	
+		}
+    },
+	"case57": {
+        "case_id": "57",
+		"case_note":"买入委托-限价单-客户状态不正常",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05005",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060033"    
+			}	
+		}
+    },
+	"case58": {
+        "case_id": "58",
+		"case_note":"买入委托-市价单-客户状态不正常",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05005",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060033"    
+			}	
+		}
+    },
+	"case59": {
+        "case_id": "59",
+		"case_note":"买入委托-止损单-客户状态不正常",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05005",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060033"    
+			}	
+		}
+    },
+	"case60": {
+        "case_id": "60",
+		"case_note":"买入委托-止损限价单-客户状态不正常",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05005",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060033"    
+			}	
+		}
+    },
+	"case61": {
+        "case_id": "61",
+		"case_note":"卖出委托-限价单-客户状态不正常",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05005",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060033"    
+			}	
+		}
+    },
+	"case62": {
+        "case_id": "62",
+		"case_note":"卖出委托-市价单-客户状态不正常",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05005",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060033"    
+			}	
+		}
+    },
+	"case63": {
+        "case_id": "63",
+		"case_note":"卖出委托-止损单-客户状态不正常",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05005",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060033"    
+			}	
+		}
+    },
+	"case64": {
+        "case_id": "64",
+		"case_note":"卖出委托-止损限价单-客户状态不正常",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05005",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060033"    
+			}	
+		}
+    },
+	"case65": {
+        "case_id": "65",
+		"case_note":"买入委托-限价单-交易数量超该证券类别总数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "AAME",
+            "FID_WTSL": 10,
+            "FID_WTJG": 2.75,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060036"    
+			}	
+		}
+    },
+	"case66": {
+        "case_id": "66",
+		"case_note":"卖出委托-限价单-交易数量超该证券类别总数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "AAME",
+            "FID_WTSL": 10,
+            "FID_WTJG": 2.75,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060036"    
+			}	
+		}
+    },
+	"case67": {
+        "case_id": "67",
+		"case_note":"买入委托-市价单-交易数量超该证券类别总数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "AAME",
+            "FID_WTSL": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060036"    
+			}	
+		}
+    },
+	"case68": {
+        "case_id": "68",
+		"case_note":"卖出委托-市价单-交易数量超该证券类别总数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "AAON",
+            "FID_WTSL": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060036"    
+			}	
+		}
+    },
+	"case69": {
+        "case_id": "69",
+		"case_note":"买入委托-止损单-交易数量超该证券类别总数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "AAME",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060036"    
+			}	
+		}
+    },
+	"case70": {
+        "case_id": "70",
+		"case_note":"卖出委托-止损单-交易数量超该证券类别总数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "AAON",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060036"    
+			}	
+		}
+    },
+	"case71": {
+        "case_id": "71",
+		"case_note":"买入委托-止损限价单-交易数量超该证券类别总数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "AAME",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 2.74,
+			"FID_WTJG": 2.75,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060036"    
+			}	
+		}
+    },
+	"case72": {
+        "case_id": "72",
+		"case_note":"卖出委托-止损限价单-交易数量超该证券类别总数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "AAME",
+            "FID_WTJG": 2.75,
+			"FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 2.76,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060036"    
+			}	
+		}
+    },
+	"case73": {
+        "case_id": "73",
+		"case_note":"买入委托-限价单-交易数量超该证券类别的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "KAMN",
+            "FID_WTSL": 200,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060035"    
+			}	
+		}
+    },
+	"case74": {
+        "case_id": "74",
+		"case_note":"卖出委托-限价单-交易数量超该证券类别的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "KAMN",
+            "FID_WTSL": 200,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060035"    
+			}	
+		}
+    },
+	"case75": {
+        "case_id": "75",
+		"case_note":"买入委托-市价单-交易数量超该证券类别的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "KAMN",
+            "FID_WTSL": 200,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060035"    
+			}	
+		}
+    },
+	"case76": {
+        "case_id": "76",
+		"case_note":"卖出委托-市价单-交易数量超该证券类别的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "KAMN",
+            "FID_WTSL": 200,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060035"    
+			}	
+		}
+    },
+	"case77": {
+        "case_id": "77",
+		"case_note":"买入委托-止损单-交易数量超该证券类别的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "KAMN",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060035"    
+			}	
+		}
+    },
+	"case78": {
+        "case_id": "78",
+		"case_note":"卖出委托-止损单-交易数量超该证券类别的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "KAMN",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060035"    
+			}	
+		}
+    },
+	"case79": {
+        "case_id": "79",
+		"case_note":"买入委托-止损限价单-交易数量超该证券类别的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "KAMN",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060035"    
+			}	
+		}
+    },
+	"case80": {
+        "case_id": "80",
+		"case_note":"卖出委托-止损限价单-交易数量超该证券类别的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "KAMN",
+            "FID_WTJG": 120,
+			"FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060035"    
+			}	
+		}
+    },
+	"case81": {
+        "case_id": "81",
+		"case_note":"买入委托-限价单-交易数量超某个证券代码的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 200,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060034"    
+			}	
+		}
+    },
+	"case82": {
+        "case_id": "82",
+		"case_note":"卖出委托-限价单-交易数量超某个证券代码的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 200,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060034"    
+			}	
+		}
+    },
+	"case83": {
+        "case_id": "83",
+		"case_note":"买入委托-市价单-交易数量超某个证券代码的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 200,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060034"    
+			}	
+		}
+    },
+	"case84": {
+        "case_id": "84",
+		"case_note":"卖出委托-市价单-交易数量超某个证券代码的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 200,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060034"    
+			}	
+		}
+    },
+	"case85": {
+        "case_id": "85",
+		"case_note":"买入委托-止损单-交易数量超某个证券代码的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060034"    
+			}	
+		}
+    },
+	"case86": {
+        "case_id": "86",
+		"case_note":"卖出委托-止损单-交易数量超某个证券代码的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060034"    
+			}	
+		}
+    },
+	"case87": {
+        "case_id": "87",
+		"case_note":"买入委托-止损限价单-交易数量超某个证券代码的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060034"    
+			}	
+		}
+    },
+	"case88": {
+        "case_id": "88",
+		"case_note":"卖出委托-止损限价单-交易数量超某个证券代码的单次委托数量",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05006",
+            "FID_ZQDM": "BABA",
+            "FID_WTJG": 120,
+			"FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060034"    
+			}	
+		}
+    },
+	"case89": {
+        "case_id": "89",
+		"case_note":"买入委托-限价单-证券代码已停牌",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "AAWW",
+            "FID_WTSL": 200,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060038"    
+			}	
+		}
+    },
+	"case90": {
+        "case_id": "90",
+		"case_note":"卖出委托-限价单-证券代码已停牌",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "AAWW",
+            "FID_WTSL": 200,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060038"    
+			}	
+		}
+    },
+	"case91": {
+        "case_id": "91",
+		"case_note":"买入委托-市价单-证券代码已停牌",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "AAWW",
+            "FID_WTSL": 200,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060038"    
+			}	
+		}
+    },
+	"case92": {
+        "case_id": "92",
+		"case_note":"卖出委托-市价单-证券代码已停牌",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "AAWW",
+            "FID_WTSL": 200,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060038"    
+			}	
+		}
+    },
+	"case93": {
+        "case_id": "93",
+		"case_note":"买入委托-止损单-证券代码已停牌",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "AAWW",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060038"    
+			}	
+		}
+    },
+	"case94": {
+        "case_id": "94",
+		"case_note":"卖出委托-止损单-证券代码已停牌",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "AAWW",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060038"    
+			}	
+		}
+    },
+	"case95": {
+        "case_id": "95",
+		"case_note":"买入委托-止损限价单-证券代码已停牌",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "AAWW",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060038"    
+			}	
+		}
+    },
+	"case96": {
+        "case_id": "96",
+		"case_note":"卖出委托-止损限价单-证券代码已停牌",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "AAWW",
+            "FID_WTJG": 120,
+			"FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060038"    
+			}	
+		}
+    },
+	"case97": {
+        "case_id": "97",
+		"case_note":"买入委托-限价单-证券代码已退市",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABCB",
+            "FID_WTSL": 200,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060037"    
+			}	
+		}
+    },
+	"case98": {
+        "case_id": "98",
+		"case_note":"卖出委托-限价单-证券代码已退市",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABCB",
+            "FID_WTSL": 200,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060037"    
+			}	
+		}
+    },
+	"case99": {
+        "case_id": "99",
+		"case_note":"买入委托-市价单-证券代码已退市",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABCB",
+            "FID_WTSL": 200,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060037"    
+			}	
+		}
+    },
+	"case100": {
+        "case_id": "100",
+		"case_note":"卖出委托-市价单-证券代码已退市",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABCB",
+            "FID_WTSL": 200,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060037"    
+			}	
+		}
+    },
+	"case101": {
+        "case_id": "101",
+		"case_note":"买入委托-止损单-证券代码已退市",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABCB",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060037"    
+			}	
+		}
+    },
+	"case102": {
+        "case_id": "102",
+		"case_note":"卖出委托-止损单-证券代码已退市",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABCB",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060037"    
+			}	
+		}
+    },
+	"case103": {
+        "case_id": "103",
+		"case_note":"买入委托-止损限价单-证券代码已退市",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABCB",
+            "FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060037"    
+			}	
+		}
+    },
+	"case104": {
+        "case_id": "104",
+		"case_note":"卖出委托-止损限价单-证券代码已退市",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABCB",
+            "FID_WTJG": 120,
+			"FID_WTSL": 200,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060037"    
+			}	
+		}
+    },
+	"case113": {
+        "case_id": "113",
+		"case_note":"买入委托-限价单-委托数量小于0",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": -1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case114": {
+        "case_id": "114",
+		"case_note":"卖出委托-限价单-委托数量小于0",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": -1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case115": {
+        "case_id": "115",
+		"case_note":"买入委托-市价单-委托数量小于0",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": -1,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": -1,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case116": {
+        "case_id": "116",
+		"case_note":"卖出委托-市价单-委托数量小于0",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": -1,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": -1,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case117": {
+        "case_id": "117",
+		"case_note":"买入委托-止损单-委托数量小于0",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": -1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case118": {
+        "case_id": "118",
+		"case_note":"卖出委托-止损单-委托数量小于0",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": -1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case119": {
+        "case_id": "119",
+		"case_note":"买入委托-止损限价单-委托数量小于0",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": -1,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case120": {
+        "case_id": "120",
+		"case_note":"卖出委托-止损限价单-委托数量小于0",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTJG": 120,
+			"FID_WTSL": -1,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case121": {
+        "case_id": "121",
+		"case_note":"买入委托-限价单-委托数量大于100000000",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 100000000,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case122": {
+        "case_id": "122",
+		"case_note":"卖出委托-限价单-委托数量大于100000000",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 100000000,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case123": {
+        "case_id": "123",
+		"case_note":"买入委托-市价单-委托数量大于100000000",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 100000000,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 100000000,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case124": {
+        "case_id": "124",
+		"case_note":"卖出委托-市价单-委托数量大于100000000",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 100000000,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 100000000,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case125": {
+        "case_id": "125",
+		"case_note":"买入委托-止损单-委托数量大于100000000",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 100000000,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case126": {
+        "case_id": "126",
+		"case_note":"卖出委托-止损单-委托数量大于100000000",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 100000000,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case127": {
+        "case_id": "127",
+		"case_note":"买入委托-止损限价单-委托数量大于100000000",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 100000000,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case128": {
+        "case_id": "128",
+		"case_note":"卖出委托-止损限价单-委托数量大于100000000",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTJG": 120,
+			"FID_WTSL": 100000000,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060031"    
+			}	
+		}
+    },
+	"case129": {
+        "case_id": "129",
+		"case_note":"买入委托-限价单-用户禁止买入",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+            "FID_WTJG": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060044"    
+			}	
+		}
+    },
+	"case130": {
+        "case_id": "130",
+		"case_note":"买入委托-市价单-用户禁止买入",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060044"    
+			}	
+		}
+    },
+	"case131": {
+        "case_id": "131",
+		"case_note":"买入委托-止损单-用户禁止买入",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060044"    
+			}	
+		}
+    },
+	"case132": {
+        "case_id": "132",
+		"case_note":"买入委托-止损限价单-用户禁止买入",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 7,
+			"FID_WTJG": 8,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060044"    
+			}	
+		}
+    },
+	"case137": {
+        "case_id": "137",
+		"case_note":"买入委托-限价单-用户禁止买入补回",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+            "FID_WTJG": 140,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060045"    
+			}	
+		}
+    },
+	"case138": {
+        "case_id": "138",
+		"case_note":"买入委托-市价单-用户禁止买入补回",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060045"    
+			}	
+		}
+    },
+	"case139": {
+        "case_id": "139",
+		"case_note":"买入委托-止损单-用户禁止买入补回",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060045"    
+			}	
+		}
+    },
+	"case140": {
+        "case_id": "140",
+		"case_note":"买入委托-止损限价单-用户禁止买入补回",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060045"    
+			}	
+		}
+    },
+	"case141": {
+        "case_id": "141",
+		"case_note":"卖出委托-限价单-用户禁止卖空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+            "FID_WTJG": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060048"    
+			}	
+		}
+    },
+	"case142": {
+        "case_id": "142",
+		"case_note":"卖出委托-市价单-用户禁止卖空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060048"    
+			}	
+		}
+    },
+	"case143": {
+        "case_id": "143",
+		"case_note":"卖出委托-止损单-用户禁止卖空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060048"    
+			}	
+		}
+    },
+	"case144": {
+        "case_id": "144",
+		"case_note":"卖出委托-止损限价单-用户禁止卖空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05008",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 9,
+			"FID_WTJG": 8,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060048"    
+			}	
+		}
+    },
+	"case145": {
+        "case_id": "145",
+		"case_note":"买入委托-限价单-证券代码禁止做多",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "A",
+            "FID_WTSL": 10,
+            "FID_WTJG": 76,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060046"    
+			}	
+		}
+    },
+	"case146": {
+        "case_id": "146",
+		"case_note":"买入委托-市价单-证券代码禁止做多",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "A",
+            "FID_WTSL": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060046"    
+			}	
+		}
+    },
+	"case147": {
+        "case_id": "147",
+		"case_note":"买入委托-止损单-证券代码禁止做多",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "A",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060046"    
+			}	
+		}
+    },
+	"case148": {
+        "case_id": "148",
+		"case_note":"买入委托-止损限价单-证券代码禁止做多",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "A",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060046"    
+			}	
+		}
+    },
+	"case149": {
+        "case_id": "149",
+		"case_note":"卖出委托-限价单-证券代码禁止做空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "LLIT",
+            "FID_WTSL": 10,
+            "FID_WTJG": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060049"    
+			}	
+		}
+    },
+	"case150": {
+        "case_id": "150",
+		"case_note":"卖出委托-市价单-证券代码禁止做空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "LLIT",
+            "FID_WTSL": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060049"    
+			}	
+		}
+    },
+	"case151": {
+        "case_id": "151",
+		"case_note":"卖出委托-止损单-证券代码禁止做空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "LLIT",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060049"    
+			}	
+		}
+    },
+	"case152": {
+        "case_id": "152",
+		"case_note":"卖出委托-止损限价单-证券代码禁止做空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "LLIT",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 9,
+			"FID_WTJG": 8,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060049"    
+			}	
+		}
+    },
+	"case153": {
+        "case_id": "153",
+		"case_note":"买入委托-限价单-购买力不足",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 400,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case154": {
+        "case_id": "154",
+		"case_note":"买入委托-市价单-购买力不足",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 400,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case155": {
+        "case_id": "155",
+		"case_note":"买入委托-止损单-购买力不足",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 400,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case156": {
+        "case_id": "156",
+		"case_note":"买入委托-止损限价单-购买力不足",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 400,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case157": {
+        "case_id": "157",
+		"case_note":"卖出委托-限价单-购买力不足",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TSLA",
+            "FID_WTSL": 400,
+            "FID_WTJG": 605,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case158": {
+        "case_id": "158",
+		"case_note":"卖出委托-市价单-购买力不足",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TSLA",
+            "FID_WTSL": 400,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case159": {
+        "case_id": "159",
+		"case_note":"卖出委托-止损单-购买力不足",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TSLA",
+            "FID_WTSL": 400,
+			"FID_COND_SL_TRIGGER_PRICE": 251,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case160": {
+        "case_id": "160",
+		"case_note":"卖出委托-止损限价单-购买力不足",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "TSLA",
+            "FID_WTSL": 400,
+			"FID_COND_SL_TRIGGER_PRICE": 606,
+			"FID_WTJG": 605,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case161": {
+        "case_id": "161",
+		"case_note":"买入委托-限价单-现金账户使用未交收资金",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05009",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case162": {
+        "case_id": "162",
+		"case_note":"买入委托-市价单-现金账户使用未交收资金",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05009",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case163": {
+        "case_id": "163",
+		"case_note":"买入委托-止损单-现金账户使用未交收资金",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05009",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case164": {
+        "case_id": "164",
+		"case_note":"买入委托-止损限价单-现金账户使用未交收资金",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05009",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 119,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060050"    
+			}	
+		}
+    },
+	"case165": {
+        "case_id": "165",
+		"case_note":"卖出委托-限价单-现金账户禁止卖空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05009",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+            "FID_WTJG": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060048"    
+			}	
+		}
+    },
+	"case166": {
+        "case_id": "166",
+		"case_note":"卖出委托-市价单-现金账户禁止卖空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05009",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060048"    
+			}	
+		}
+    },
+	"case167": {
+        "case_id": "167",
+		"case_note":"卖出委托-止损单-现金账户禁止卖空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 201,
+            "FID_ZJZH": "5LC05009",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 11,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060048"    
+			}	
+		}
+    },
+	"case168": {
+        "case_id": "168",
+		"case_note":"卖出委托-止损限价单-现金账户禁止卖空",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05009",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 11,
+			"FID_WTJG": 10,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060048"    
+			}	
+		}
+    },
+	"case169": {
+        "case_id": "169",
+		"case_note":"买入委托-限价单-股票价格精度为2位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABC",
+            "FID_WTSL": 10,
+            "FID_WTJG": 120.123,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060051"    
+			}	
+		}
+    },
+	"case170": {
+        "case_id": "170",
+		"case_note":"买入委托-止损限价单-股票价格精度为2位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABC",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_WTJG": 120.123,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060051"    
+			}	
+		}
+    },
+	"case171": {
+        "case_id": "171",
+		"case_note":"卖出委托-限价单-股票价格精度为2位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABC",
+            "FID_WTSL": 10,
+            "FID_WTJG": 120.123,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060051"    
+			}	
+		}
+    },
+	"case172": {
+        "case_id": "172",
+		"case_note":"卖出委托-止损限价单-股票价格精度为2位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABC",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 121,
+			"FID_WTJG": 120.123,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060051"    
+			}	
+		}
+    },
+	"case173": {
+        "case_id": "173",
+		"case_note":"买入委托-限价单-股票价格精度为3位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABT",
+            "FID_WTSL": 10,
+            "FID_WTJG": 120.1214,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060052"    
+			}	
+		}
+    },
+	"case174": {
+        "case_id": "174",
+		"case_note":"买入委托-止损限价单-股票价格精度为3位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABT",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_WTJG": 120.1214,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060052"    
+			}	
+		}
+    },
+	"case175": {
+        "case_id": "175",
+		"case_note":"卖出委托-限价单-股票价格精度为3位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABT",
+            "FID_WTSL": 10,
+            "FID_WTJG": 120.1214,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060052"    
+			}	
+		}
+    },
+	"case176": {
+        "case_id": "176",
+		"case_note":"卖出委托-止损限价单-股票价格精度为3位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ABT",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 121,
+			"FID_WTJG": 120.1214,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060052"    
+			}	
+		}
+    },
+	"case177": {
+        "case_id": "177",
+		"case_note":"买入委托-限价单-股票价格精度为4位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ACH",
+            "FID_WTSL": 10,
+            "FID_WTJG": 10.12141,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060053"    
+			}	
+		}
+    },
+	"case178": {
+        "case_id": "178",
+		"case_note":"买入委托-止损限价单-股票价格精度为4位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ACH",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 10,
+			"FID_WTJG": 10.12141,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060053"    
+			}	
+		}
+    },
+	"case179": {
+        "case_id": "179",
+		"case_note":"卖出委托-限价单-股票价格精度为4位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ACH",
+            "FID_WTSL": 10,
+            "FID_WTJG": 10.12141,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060053"    
+			}	
+		}
+    },
+	"case180": {
+        "case_id": "180",
+		"case_note":"卖出委托-止损限价单-股票价格精度为4位但委托价格精度为其他",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "ACH",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 11,
+			"FID_WTJG": 10.12141,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060053"    
+			}	
+		}
+    },
+	"case181": {
+        "case_id": "181",
+		"case_note":"买入委托-止损限价单-止损单大于限价",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 122,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060054"    
+			}	
+		}
+    },
+	"case182": {
+        "case_id": "182",
+		"case_note":"卖出委托-止损限价单-止损单大于限价",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 118,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060054"    
+			}	
+		}
+    },
+	"case183": {
+        "case_id": "183",
+		"case_note":"买入委托-限价单-乌龙指检查委托价大于现价的50%",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+            "FID_WTJG": 350,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060055"    
+			}	
+		}
+    },
+	"case184": {
+        "case_id": "184",
+		"case_note":"买入委托-止损限价单-乌龙指检查委托价大于现价的50%",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 350,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060055"    
+			}	
+		}
+    },
+	"case185": {
+        "case_id": "185",
+		"case_note":"卖出委托-限价单-乌龙指检查委托价大于现价的50%",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+            "FID_WTJG": 350,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060055"    
+			}	
+		}
+    },
+	"case186": {
+        "case_id": "186",
+		"case_note":"卖出委托-止损限价单-乌龙指检查委托价大于现价的50%",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 360,
+			"FID_WTJG": 350,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060055"    
+			}	
+		}
+    },
+	"case187": {
+        "case_id": "187",
+		"case_note":"买入委托-限价单-乌龙指检查委托价小于现价的50%",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+            "FID_WTJG": 50,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060056"    
+			}	
+		}
+    },
+	"case188": {
+        "case_id": "188",
+		"case_note":"买入委托-止损限价单-乌龙指检查委托价小于现价的50%",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 49,
+			"FID_WTJG": 50,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060056"    
+			}	
+		}
+    },
+	"case189": {
+        "case_id": "189",
+		"case_note":"卖出委托-限价单-乌龙指检查委托价小于现价的50%",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+            "FID_WTJG": 50,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item": 
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060056"    
+			}	
+		}
+    },
+	"case190": {
+        "case_id": "190",
+		"case_note":"卖出委托-止损限价单-乌龙指检查委托价小于现价的50%",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_DDLX": 202,
+            "FID_ZJZH": "5LC05004",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 10,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 50,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-32060056"    
+			}	
+		}
+    }
+}

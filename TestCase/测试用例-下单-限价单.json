@@ -1,0 +1,906 @@
+{
+    "case1": {
+        "case_id": "1",
+		"case_note":"买入委托-限价单-已报未成",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05010",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 10,
+            "FID_WTJG": 9.5,
+			"FID_LY":1
+        },
+        "header": "",
+		"check_item":
+		{
+			"quickbroker.entrust": 
+			{
+                "entrust_type": {
+					"expect_value": 1001
+				},
+				"stock_type": {
+                    "expect_value": "S0"
+                },
+				"order_type": {
+					"expect_value": 0
+				},
+				"order_source": {
+					"expect_value": "1"
+				},
+				"offset_flag": {
+					"expect_value": 1
+				},
+				"stock_code": {
+					"expect_value": "F"
+				},
+				"frozen_balance": {
+					"expect_value": 52.25
+				},
+				"clear_balance": {
+					"expect_value": 0.0
+				},
+				"business_price": {
+					"expect_value": 0.0
+				},
+				"business_amount": {
+					"expect_value": 0
+				},
+				"report_result": {
+					"expect_value": 2
+				},
+				"business_balance": {
+					"expect_value": 0.0
+				},
+				"business_part_commision": {
+					"expect_value": 0.0
+				},
+				"cancel_amount": {
+					"expect_value": 0
+				},
+				"cancel_flag": {
+					"expect_value": "O"
+				}
+			},
+			"quickbroker.business": 
+			{
+                "entrust_type": {
+					"expect_value": "NULL"
+				},
+				"stock_type": {
+                    "expect_value": "NULL"
+                },
+				"stock_code": {
+					"expect_value": "NULL"
+				},
+				"business_amount": {
+					"expect_value": "NULL"
+				},
+				"business_price": {
+					"expect_value": "NULL"
+				},
+				"business_balance": {
+					"expect_value": "NULL"
+				},
+				"clear_balance": {
+					"expect_value": "NULL"
+				},
+				"commission": {
+					"expect_value": "NULL"
+				},
+				"cancel_flag": {
+					"expect_value": "NULL"
+				}
+			},
+			"quickbroker.stkfrozendtl": 
+			{
+                "frozen_type": {
+					"expect_value": "NULL"
+				},
+				"occur_amount": {
+                    "expect_value": "NULL"
+                }
+			},
+			"quickbroker.fundfrozendtl": 
+			{
+                "frozen_type": {
+					"expect_value": 1
+				},
+				"occur_balance": {
+                    "expect_value": 52.25
+                }
+			},
+			"quickbroker.stock": 
+			{
+                "entrust_buy_amount": {
+					"expect_value": 10,
+					"type":"inc"
+				},
+				"entrust_sale_amount": {
+                    "expect_value": 0,
+					"type":"inc"
+                },
+				"buy_business_amount": {
+					"expect_value": 0,
+					"type":"inc"
+				},
+				"sale_business_amount": {
+					"expect_value": 0,
+					"type":"inc"
+				},
+				"buy_business_balance": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sale_business_balance": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"position_cost": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"release_yesterday_amount": {
+					"expect_value": 0,
+					"type":"inc"
+				}
+			},
+			"quickbroker.fundaccount": 
+			{
+                "current_balance": {
+					"expect_value": 10000.0
+				},
+				"buy_freeze_funds": {
+                    "expect_value": 52.25,
+					"type":"inc"
+                },
+				"sell_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sellshort_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buy_up_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sell_yesterday_release_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sell_today_release_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_yesterday_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_today_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				}
+			}
+		},
+		"db_key": 
+		{
+            "quickbroker.entrust": {
+                "report_no": "@response.ROWS.$0.FID_SBWTH"
+            },
+            "quickbroker.business": {
+                "report_no": "@response.ROWS.$0.FID_SBWTH"
+            },
+			"quickbroker.fundaccount": 
+			{
+                "fund_account": "@data.FID_ZJZH"
+            },
+			"quickbroker.stkfrozendtl":
+			{
+				"bat_froz_no":"@db.quickbroker.entrust.stkfroz_serial_no"
+			},
+			"quickbroker.fundfrozendtl":
+			{
+				"bat_froz_no":"@db.quickbroker.entrust.fundfroz_serial_no"
+			},
+			"quickbroker.stock":
+			{ 
+				"fund_account": "@data.FID_ZJZH",
+				"stock_code": "@data.FID_ZQDM"
+			}
+		},
+        "check_response_item":
+		{
+			"FID_CODE": 
+			{
+				"expect_value": "0" 
+			}	
+		}
+    },
+	"case2": {
+        "case_id": "2",
+		"case_note":"买入委托-限价单-全部成交",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05010",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 20,
+            "FID_WTJG": 9.5,
+			"FID_LY":1
+        },
+        "header": "",
+		"check_item":
+		{
+			"quickbroker.entrust": 
+			{
+                "entrust_type": {
+					"expect_value": 1001
+				},
+				"stock_type": {
+                    "expect_value": "S0"
+                },
+				"order_type": {
+					"expect_value": 0
+				},
+				"order_source": {
+					"expect_value": "1"
+				},
+				"offset_flag": {
+					"expect_value": 1
+				},
+				"stock_code": {
+					"expect_value": "F"
+				},
+				"frozen_balance": {
+					"expect_value": 0.0
+				},
+				"clear_balance": {
+					"expect_value": 194.75
+				},
+				"business_price": {
+					"expect_value": 9.5
+				},
+				"business_amount": {
+					"expect_value": 20
+				},
+				"report_result": {
+					"expect_value": 6
+				},
+				"business_balance": {
+					"expect_value": 190.0
+				},
+				"business_part_commision": {
+					"expect_value": 4.75
+				},
+				"cancel_amount": {
+					"expect_value": 0
+				},
+				"cancel_flag": {
+					"expect_value": "O"
+				}
+			},
+			"quickbroker.business": 
+			{
+                "entrust_type": {
+					"expect_value": 1001
+				},
+				"stock_type": {
+                    "expect_value": "S0"
+                },
+				"stock_code": {
+					"expect_value": "F"
+				},
+				"business_amount": {
+					"expect_value": 20
+				},
+				"business_price": {
+					"expect_value": 9.5
+				},
+				"business_balance": {
+					"expect_value": 190.0
+				},
+				"clear_balance": {
+					"expect_value": 194.75
+				},
+				"commission": {
+					"expect_value": 4.75
+				},
+				"cancel_flag": {
+					"expect_value": "O"
+				}
+			},
+			"quickbroker.stkfrozendtl": 
+			{
+                "frozen_type": {
+					"expect_value": "NULL"
+				},
+				"occur_amount": {
+                    "expect_value": "NULL"
+                }
+			},
+			"quickbroker.fundfrozendtl": 
+			{
+                "frozen_type": {
+					"expect_value": 1
+				},
+				"occur_balance": {
+                    "expect_value": 99.75
+                }
+			},
+			"quickbroker.stock": 
+			{
+                "entrust_buy_amount": {
+					"expect_value": 20,
+					"type":"inc"
+				},
+				"entrust_sale_amount": {
+                    "expect_value": 0,
+					"type":"inc"
+                },
+				"buy_business_amount": {
+					"expect_value": 20,
+					"type":"inc"
+				},
+				"sale_business_amount": {
+					"expect_value": 0,
+					"type":"inc"
+				},
+				"buy_business_balance": {
+					"expect_value": 194.75,
+					"type":"inc"
+				},
+				"sale_business_balance": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"position_cost": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"release_yesterday_amount": {
+					"expect_value": 0,
+					"type":"inc"
+				}
+			},
+			"quickbroker.fundaccount": 
+			{
+                "current_balance": {
+					"expect_value": 10000.0
+				},
+				"buy_freeze_funds": {
+                    "expect_value": 0.0,
+					"type":"inc"
+                },
+				"sell_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sellshort_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buy_up_funds": {
+					"expect_value": 194.75,
+					"type":"inc"
+				},
+				"sell_yesterday_release_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sell_today_release_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_yesterday_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_today_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				}
+			}
+		},
+		"db_key": 
+		{
+            "quickbroker.entrust": {
+                "report_no": "@response.ROWS.$0.FID_SBWTH"
+            },
+            "quickbroker.business": {
+                "report_no": "@response.ROWS.$0.FID_SBWTH"
+            },
+			"quickbroker.fundaccount": 
+			{
+                "fund_account": "@data.FID_ZJZH"
+            },
+			"quickbroker.stkfrozendtl":
+			{
+				"bat_froz_no":"@db.quickbroker.entrust.stkfroz_serial_no"
+			},
+			"quickbroker.fundfrozendtl":
+			{
+				"bat_froz_no":"@db.quickbroker.entrust.fundfroz_serial_no"
+			},
+			"quickbroker.stock":
+			{ 
+				"fund_account": "@data.FID_ZJZH",
+				"stock_code": "@data.FID_ZQDM"
+			}
+		},
+        "check_response_item":
+		{
+			"FID_CODE": 
+			{
+				"expect_value": "0" 
+			}	
+		}
+    },
+	"case3": {
+        "case_id": "3",
+		"case_note":"买入委托-限价单-部分成交",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05010",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 30,
+            "FID_WTJG": 9.5,
+			"FID_LY":1
+        },
+        "header": "",
+		"check_item":
+		{
+			"quickbroker.entrust": 
+			{
+                "entrust_type": {
+					"expect_value": 1001
+				},
+				"stock_type": {
+                    "expect_value": "S0"
+                },
+				"order_type": {
+					"expect_value": 0
+				},
+				"order_source": {
+					"expect_value": "1"
+				},
+				"offset_flag": {
+					"expect_value": 1
+				},
+				"stock_code": {
+					"expect_value": "F"
+				},
+				"frozen_balance": {
+					"expect_value": 49.083
+				},
+				"clear_balance": {
+					"expect_value": 194.75
+				},
+				"business_price": {
+					"expect_value": 9.5
+				},
+				"business_amount": {
+					"expect_value": 20
+				},
+				"report_result": {
+					"expect_value": 5
+				},
+				"business_balance": {
+					"expect_value": 190.0
+				},
+				"business_part_commision": {
+					"expect_value": 4.75
+				},
+				"cancel_amount": {
+					"expect_value": 0
+				},
+				"cancel_flag": {
+					"expect_value": "O"
+				}
+			},
+			"quickbroker.business": 
+			{
+                "entrust_type": {
+					"expect_value": 1001
+				},
+				"stock_type": {
+                    "expect_value": "S0"
+                },
+				"stock_code": {
+					"expect_value": "F"
+				},
+				"business_amount": {
+					"expect_value": 20
+				},
+				"business_price": {
+					"expect_value": 9.5
+				},
+				"business_balance": {
+					"expect_value": 190.0
+				},
+				"clear_balance": {
+					"expect_value": 194.75
+				},
+				"commission": {
+					"expect_value": 4.75
+				},
+				"cancel_flag": {
+					"expect_value": "O"
+				}
+			},
+			"quickbroker.stkfrozendtl": 
+			{
+                "frozen_type": {
+					"expect_value": "NULL"
+				},
+				"occur_amount": {
+                    "expect_value": "NULL"
+                }
+			},
+			"quickbroker.fundfrozendtl": 
+			{
+                "frozen_type": {
+					"expect_value": 1
+				},
+				"occur_balance": {
+                    "expect_value": 147.25
+                }
+			},
+			"quickbroker.stock": 
+			{
+                "entrust_buy_amount": {
+					"expect_value": 30,
+					"type":"inc"
+				},
+				"entrust_sale_amount": {
+                    "expect_value": 0,
+					"type":"inc"
+                },
+				"buy_business_amount": {
+					"expect_value": 20,
+					"type":"inc"
+				},
+				"sale_business_amount": {
+					"expect_value": 0,
+					"type":"inc"
+				},
+				"buy_business_balance": {
+					"expect_value": 194.75,
+					"type":"inc"
+				},
+				"sale_business_balance": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"position_cost": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"release_yesterday_amount": {
+					"expect_value": 0,
+					"type":"inc"
+				}
+			},
+			"quickbroker.fundaccount": 
+			{
+                "current_balance": {
+					"expect_value": 10000.0
+				},
+				"buy_freeze_funds": {
+                    "expect_value": 49.083,
+					"type":"inc"
+                },
+				"sell_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sellshort_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buy_up_funds": {
+					"expect_value": 194.75,
+					"type":"inc"
+				},
+				"sell_yesterday_release_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sell_today_release_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_yesterday_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_today_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				}
+			}
+		},
+		"db_key": 
+		{
+            "quickbroker.entrust": {
+                "report_no": "@response.ROWS.$0.FID_SBWTH"
+            },
+            "quickbroker.business": {
+                "report_no": "@response.ROWS.$0.FID_SBWTH"
+            },
+			"quickbroker.fundaccount": 
+			{
+                "fund_account": "@data.FID_ZJZH"
+            },
+			"quickbroker.stkfrozendtl":
+			{
+				"bat_froz_no":"@db.quickbroker.entrust.stkfroz_serial_no"
+			},
+			"quickbroker.fundfrozendtl":
+			{
+				"bat_froz_no":"@db.quickbroker.entrust.fundfroz_serial_no"
+			},
+			"quickbroker.stock":
+			{ 
+				"fund_account": "@data.FID_ZJZH",
+				"stock_code": "@data.FID_ZQDM"
+			}
+		},
+        "check_response_item":
+		{
+			"FID_CODE": 
+			{
+				"expect_value": "0" 
+			}	
+		}
+    },
+	"case4": {
+        "case_id": "4",
+		"case_note":"买入委托-限价单-废单",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05010",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 40,
+            "FID_WTJG": 9.5,
+			"FID_LY":1
+        },
+        "header": "",
+		"check_item":
+		{
+			"quickbroker.entrust": 
+			{
+                "entrust_type": {
+					"expect_value": 1001
+				},
+				"stock_type": {
+                    "expect_value": "S0"
+                },
+				"order_type": {
+					"expect_value": 0
+				},
+				"order_source": {
+					"expect_value": "1"
+				},
+				"offset_flag": {
+					"expect_value": 1
+				},
+				"stock_code": {
+					"expect_value": "F"
+				},
+				"frozen_balance": {
+					"expect_value": 0.0
+				},
+				"clear_balance": {
+					"expect_value": 0.0
+				},
+				"business_price": {
+					"expect_value": 0.0
+				},
+				"business_amount": {
+					"expect_value": 0
+				},
+				"report_result": {
+					"expect_value": 3
+				},
+				"business_balance": {
+					"expect_value": 0.0
+				},
+				"business_part_commision": {
+					"expect_value": 0.0
+				},
+				"cancel_amount": {
+					"expect_value": 0
+				},
+				"cancel_flag": {
+					"expect_value": "O"
+				}
+			},
+			"quickbroker.business": 
+			{
+                "entrust_type": {
+					"expect_value": "NULL"
+				},
+				"stock_type": {
+                    "expect_value": "NULL"
+                },
+				"stock_code": {
+					"expect_value": "NULL"
+				},
+				"business_amount": {
+					"expect_value": "NULL"
+				},
+				"business_price": {
+					"expect_value": "NULL"
+				},
+				"business_balance": {
+					"expect_value": "NULL"
+				},
+				"clear_balance": {
+					"expect_value": "NULL"
+				},
+				"commission": {
+					"expect_value": "NULL"
+				},
+				"cancel_flag": {
+					"expect_value": "NULL"
+				}
+			},
+			"quickbroker.stkfrozendtl": 
+			{
+                "frozen_type": {
+					"expect_value": "NULL"
+				},
+				"occur_amount": {
+                    "expect_value": "NULL"
+                }
+			},
+			"quickbroker.fundfrozendtl": 
+			{
+                "frozen_type": {
+					"expect_value": 1
+				},
+				"occur_balance": {
+                    "expect_value": 194.75
+                }
+			},
+			"quickbroker.stock": 
+			{
+                "entrust_buy_amount": {
+					"expect_value": 0,
+					"type":"inc"
+				},
+				"entrust_sale_amount": {
+                    "expect_value": 0,
+					"type":"inc"
+                },
+				"buy_business_amount": {
+					"expect_value": 0,
+					"type":"inc"
+				},
+				"sale_business_amount": {
+					"expect_value": 0,
+					"type":"inc"
+				},
+				"buy_business_balance": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sale_business_balance": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"position_cost": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"release_yesterday_amount": {
+					"expect_value": 0,
+					"type":"inc"
+				}
+			},
+			"quickbroker.fundaccount": 
+			{
+                "current_balance": {
+					"expect_value": 10000.0
+				},
+				"buy_freeze_funds": {
+                    "expect_value": 0.0,
+					"type":"inc"
+                },
+				"sell_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sellshort_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_freeze_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buy_up_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sell_yesterday_release_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"sell_today_release_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_yesterday_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				},
+				"buytocover_today_funds": {
+					"expect_value": 0.0,
+					"type":"inc"
+				}
+			}
+		},
+		"db_key": 
+		{
+            "quickbroker.entrust": {
+                "report_no": "@response.ROWS.$0.FID_SBWTH"
+            },
+            "quickbroker.business": {
+                "report_no": "@response.ROWS.$0.FID_SBWTH"
+            },
+			"quickbroker.fundaccount": 
+			{
+                "fund_account": "@data.FID_ZJZH"
+            },
+			"quickbroker.stkfrozendtl":
+			{
+				"bat_froz_no":"@db.quickbroker.entrust.stkfroz_serial_no"
+			},
+			"quickbroker.fundfrozendtl":
+			{
+				"bat_froz_no":"@db.quickbroker.entrust.fundfroz_serial_no"
+			},
+			"quickbroker.stock":
+			{ 
+				"fund_account": "@data.FID_ZJZH",
+				"stock_code": "@data.FID_ZQDM"
+			}
+		},
+        "check_response_item":
+		{
+			"FID_CODE": 
+			{
+				"expect_value": "0" 
+			}	
+		}
+    }
+}

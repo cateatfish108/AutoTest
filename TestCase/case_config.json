@@ -1,0 +1,16 @@
+{
+    "case_list":
+    [
+        "测试用例-订单校验.json"
+    ],
+    "case_path":"../TestCase/",
+    "database":
+    {
+        "url":"10.0.29.218",
+        "port":3306,
+        "username":"root",
+        "password":"myhexin",
+        "database":"quickbroker",
+        "charset":"utf8"
+    }
+}

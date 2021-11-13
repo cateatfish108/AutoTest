@@ -1,0 +1,240 @@
+{
+    "case1": {
+        "case_id": "case1",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTH": 0,
+            "FID_CXBZ": 0,
+            "FID_LY": 1,
+            "FID_DDLX": 0,
+            "FID_FJC": "INNER",
+            "FID_KHH": "5LC05004",
+            "FID_GDH": "5LC05004",
+            "FID_ZJZH": "5LC05004",
+            "FID_TXMM": 8888888,
+            "FID_JYMM": 123456,
+            "FID_WTLB": 1001,
+            "FID_JYS": "NY",
+            "FID_ZQDM": "F",
+            "FID_WTSL": 20,
+            "FID_WTJG": 14,
+            "FID_GGLB": 1
+        },
+        "header": "",
+        "check_response_item": "",
+        "check_item": {
+            "quickbroker.stkfrozendtl": {
+                "occur_amount": {
+                    "expect_value": "",
+                    "actual_value": ""
+                },
+                "frozen_type": {
+                    "expect_value": "",
+                    "actual_value": ""
+                }
+            },
+            "quickbroker.fundaccount": {
+                "buy_up_funds": {
+                    "expect_value": 0,
+                    "actual_value": "0.000"
+                },
+                "buytocover_yesterday_funds": {
+                    "expect_value": 0,
+                    "actual_value": "0.000"
+                },
+                "sell_today_release_funds": {
+                    "expect_value": 0,
+                    "actual_value": "0.000"
+                },
+                "sellshort_freeze_funds": {
+                    "expect_value": 0,
+                    "actual_value": "0.000"
+                },
+                "buytocover_freeze_funds": {
+                    "expect_value": 0,
+                    "actual_value": "0.000"
+                },
+                "sell_yesterday_release_funds": {
+                    "expect_value": 0,
+                    "actual_value": "0.000"
+                },
+                "sellshort_funds": {
+                    "expect_value": 0,
+                    "actual_value": "0.000"
+                },
+                "buytocover_today_funds": {
+                    "expect_value": 0,
+                    "actual_value": "0.000"
+                }
+            },
+            "quickbroker.entrust": {
+                "cancel_amount": {
+                    "expect_value": 0,
+                    "actual_value": 0
+                },
+                "order_type": {
+                    "expect_value": 0,
+                    "actual_value": 0
+                },
+                "order_source": {
+                    "expect_value": 1,
+                    "actual_value": "1"
+                },
+                "stock_type": {
+                    "expect_value": "C1",
+                    "actual_value": "S0"
+                },
+                "business_price": {
+                    "expect_value": 0,
+                    "actual_value": "0.0000"
+                },
+                "frozen_balance": {
+                    "expect_value": 907.5,
+                    "actual_value": "144.750"
+                },
+                "entrust_type": {
+                    "expect_value": 1001,
+                    "actual_value": 1001
+                },
+                "business_part_commision": {
+                    "expect_value": 0,
+                    "actual_value": "0.000"
+                },
+                "business_balance": {
+                    "expect_value": 0,
+                    "actual_value": "0.000"
+                },
+                "stock_code": {
+                    "expect_value": "BABA",
+                    "actual_value": "F"
+                },
+                "business_amount": {
+                    "expect_value": 0,
+                    "actual_value": 0
+                },
+                "offset_flag": {
+                    "expect_value": 1,
+                    "actual_value": 1
+                },
+                "clear_balance": {
+                    "expect_value": 0,
+                    "actual_value": "0.000"
+                },
+                "report_result": {
+                    "expect_value": 2,
+                    "actual_value": 14
+                },
+                "cancel_flag": {
+                    "expect_value": "O",
+                    "actual_value": "O"
+                }
+            },
+            "quickbroker.business": {
+                "stock_code": {
+                    "expect_value": "",
+                    "actual_value": ""
+                },
+                "commission": {
+                    "expect_value": "",
+                    "actual_value": ""
+                },
+                "business_amount": {
+                    "expect_value": "",
+                    "actual_value": ""
+                },
+                "stock_type": {
+                    "expect_value": "",
+                    "actual_value": ""
+                },
+                "business_price": {
+                    "expect_value": "",
+                    "actual_value": ""
+                },
+                "clear_balance": {
+                    "expect_value": "",
+                    "actual_value": ""
+                },
+                "entrust_type": {
+                    "expect_value": "",
+                    "actual_value": ""
+                },
+                "business_balance": {
+                    "expect_value": "",
+                    "actual_value": ""
+                }
+            },
+            "quickbroker.fundfrozendtl": {
+                "frozen_type": {
+                    "expect_value": 1,
+                    "actual_value": 1
+                },
+                "occur_balance": {
+                    "expect_value": 907.5,
+                    "actual_value": "144.750"
+                }
+            }
+        },
+        "response": {
+            "FID_CODE": "1",
+            "FID_FULL_ERROR_INFO": "Order Successful",
+            "FID_MESSAGE": "Order Successful",
+            "FUNCID": "620001",
+            "ROWS": [
+                {
+                    "FID_BZ": "USD",
+                    "FID_DDLX": "0",
+                    "FID_FJXX": "",
+                    "FID_JSLX": "1",
+                    "FID_JYS": "NY",
+                    "FID_KHH": "5LC05004",
+                    "FID_SBWTH": "100002",
+                    "FID_WTJD": "",
+                    "FID_WTJG": "14.0000000000",
+                    "FID_WTLB": "1001",
+                    "FID_WTPCH": "0",
+                    "FID_WTRQ": "20210601",
+                    "FID_WTSJ": "090936070",
+                    "FID_WTSL": "20",
+                    "FID_ZJZH": "5LC05004",
+                    "FID_ZQDM": "F",
+                    "FID_ZQLB": "S0",
+                    "FID_ZQMC": "Ford Motor"
+                }
+            ]
+        },
+        "db_key": {
+            "quickbroker.entrust": {
+                "entrust_no": "@RESPONSE.ROWS.$0.FID_SBWTH"
+            },
+            "quickbroker.business": {
+                "entrust_no": "@RESPONSE.ROWS.$0.FID_SBWTH"
+            },
+            "quickbroker.fundaccount": {
+                "fund_account": "@DATA.FID_KHH"
+            },
+            "quickbroker.stkfrozendtl": {
+                "serial_no": {
+                    "@DB": {
+                        "table": "QUICKBROKER.ENTRUST",
+                        "field": "STKFROZ_SERIAL_NO",
+                        "condition_field": "ENTRUST_NO",
+                        "condition_value": "RESPONSE.ROWS.$0.FID_SBWTH"
+                    }
+                }
+            },
+            "quickbroker.fundfrozendtl": {
+                "serial_no": {
+                    "@DB": {
+                        "table": "QUICKBROKER.ENTRUST",
+                        "field": "FUNDFROZ_SERIAL_NO",
+                        "condition_field": "ENTRUST_NO",
+                        "condition_value": "RESPONSE.ROWS.$0.FID_SBWTH"
+                    }
+                }
+            }
+        },
+        "check_result": 0
+    }
+}

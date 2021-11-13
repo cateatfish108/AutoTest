@@ -1,0 +1,7 @@
+{
+    "sql_list":
+    [
+        "测试用例-订单检查-初始化脚本.sql"
+    ],
+    "init_data_path":"./initData/"
+}

@@ -1,0 +1,200 @@
+{
+    "case1": {
+        "case_id": "case1",
+		"case_note":"买入委托-限价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+		"header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case2": {
+        "case_id": "case2",
+		"case_note":"卖出委托-限价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 0,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+            "FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case3": {
+        "case_id": "case3",
+		"case_note":"买入委托-市价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case4": {
+        "case_id": "case4",
+		"case_note":"卖出委托-市价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case5": {
+        "case_id": "case5",
+		"case_note":"买入委托-止损价-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case6": {
+        "case_id": "case6",
+		"case_note":"卖出委托-止损价-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case7": {
+        "case_id": "case7",
+		"case_note":"买入委托-止损限价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1001,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTSL": 1,
+			"FID_COND_SL_TRIGGER_PRICE": 110,
+			"FID_WTJG": 120,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    },
+	"case8": {
+        "case_id": "case8",
+		"case_note":"卖出委托-止损限价单-测试输入的客户信息不存在",
+        "url": "http://10.0.29.218:8080/",
+        "method": "GET",
+        "data": {
+            "Funcid": 620001,
+            "FID_WTLB": 1002,
+            "FID_CXBZ": 0,
+            "FID_DDLX": 200,
+            "FID_ZJZH": "5LC05002",
+            "FID_ZQDM": "BABA",
+            "FID_WTJG": 120,
+			"FID_COND_SL_TRIGGER_PRICE": 130,
+			"FID_LY":1
+        },
+        "header": "",
+        "check_response_item":
+		{
+			"FID_CODE":
+			{
+				"expect_value": "-42060215" 
+			}	
+		}
+    }
+}
