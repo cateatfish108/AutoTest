@@ -43,7 +43,7 @@ if __name__ == '__main__':
     res=pro_http.sendHttp(url,method,data)
     print(res)
     # midoffice
-    # url="http://172.19.81.78:6060/midoffice/singleUser/feed/insert"
+    # url="http://127.0.0.1:6060/midoffice/singleUser/feed/insert"
     # method="POST"
     # data={
     #     "feedbackType":"1",

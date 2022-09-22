@@ -38,7 +38,7 @@ if __name__ == '__main__':
 	sys.path.append(BASE_DIR)
 	from base.struct_data import DataBase
 	db=DataBase()
-	db.url="172.19.81.78"
+	db.url="127.0.0.1"
 	db.port=8002
 	db.username="root"
 	db.password="OMS@10jqka"

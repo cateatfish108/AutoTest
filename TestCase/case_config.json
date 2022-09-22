@@ -9,7 +9,7 @@
         "url":"10.0.29.218",
         "port":3306,
         "username":"root",
-        "password":"myhexin",
+        "password":"test",
         "database":"quickbroker",
         "charset":"utf8"
     }
